@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element audit="true" extends="task" label="AhNeedIt" max_length="40" name="x_58872_needit_ahneedit" sizeclass="3" type="collection">
+        <element label="New Field Yeah" max_length="40" name="new_field_yeah" type="integer"/>
+        <element default="default" label="Conditions" max_length="40" name="u_conditions" type="condition_string"/>
+        <element label="Requested Four" mandatory="true" max_length="32" name="u_req_for" reference="sys_user" type="reference"/>
+        <element attributes="edge_encryption_enabled=true" choice="3" default="illegal" label="Request Typ" mandatory="true" max_length="40" name="u_req_typ" type="string">
+            <choice>
+                <element inactive_on_update="false" label="Human Target" sequence="0" value="hr"/>
+                <element inactive_on_update="false" label="Flight Facilities" sequence="1" value="facilities"/>
+                <element inactive_on_update="false" label="Illegal" sequence="2" value="illegal"/>
+                <element inactive_on_update="false" label="My Dept My Choice" sequence="3" value="my_dept"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" choice="3" default="illegal 1" label="What Needit" mandatory="true" max_length="40" name="u_what_needed" type="string">
+            <choice>
+                <element inactive_on_update="false" label="Human Target 1" sequence="0" value="target1"/>
+                <element inactive_on_update="false" label="Human Target 2" sequence="1" value="target2"/>
+                <element inactive_on_update="false" label="Flight Facilities 1" sequence="2" value="facilities1"/>
+                <element inactive_on_update="false" label="Flight Facilities 2" sequence="3" value="facilities2"/>
+                <element inactive_on_update="false" label="Illegal 1" sequence="4" value="illegal1"/>
+                <element inactive_on_update="false" label="Illegal 2" sequence="5" value="illegal2"/>
+                <element inactive_on_update="false" label="My Dept My Choice 1" sequence="6" value="my_dept1"/>
+                <element inactive_on_update="false" label="My Dept My Choice 2" sequence="7" value="my_dept2"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" label="When Needit" mandatory="true" max_length="40" name="u_when_needed" type="glide_date_time"/>
+    </element>
+</database>
